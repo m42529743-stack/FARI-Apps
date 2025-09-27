@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FARI Apps</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; }
+    .button { 
+      display: inline-block; 
+      margin: 10px; padding: 15px 25px; 
+      background: #007bff; color: #fff; 
+      border-radius: 10px; cursor: pointer; 
+    }
+    .button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <h2>Welcome to FARI Apps</h2>
+  <button class="button" onclick="sendMoney()">Send Money</button>
+  <button class="button" onclick="mobileRecharge()">Mobile Recharge</button>
+  <button class="button" onclick="cashOut()">Cash Out</button>
+  <button class="button" onclick="payment()">Payment</button>
+  <button class="button" onclick="addMoney()">Add Money</button>
+  <button class="button" onclick="savings()">Savings</button>
+
+  <script>
+    function sendMoney() {
+      alert("✅ Send Money Successful (Demo)");
+    }
+    function mobileRecharge() {
+      alert("📱 Mobile Recharge Done (Demo)");
+    }
+    function cashOut() {
+      alert("💸 Cash Out Successful (Demo)");
+    }
+    function payment() {
+      alert("🛒 Payment Completed (Demo)");
+    }
+    function addMoney() {
+      alert("💳 Add Money Successful (Demo)");
+    }
+    function savings() {
+      alert("🏦 Savings Added (Demo)");
+    }
+  </script>
+</body>
+</html>
