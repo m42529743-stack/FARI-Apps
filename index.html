@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>FARI - Home</title>
+<style>
+:root{--blue:#0b5bbf;--yellow:#ffd600;--white:#fff;--black:#111;}
+*{box-sizing:border-box}
+body{font-family:Inter, Arial, sans-serif; margin:0; background:#f6f7fb; color:var(--black)}
+.header{background:var(--blue); color:var(--white); padding:18px 16px; border-bottom-left-radius:16px; border-bottom-right-radius:16px}
+.header .top{display:flex; align-items:center; justify-content:space-between}
+.logo{display:flex; align-items:center; gap:12px}
+.logo img{height:56px; width:auto}
+.brand-small{font-weight:700; font-size:14px}
+.balance-pill{background:var(--white); color:var(--black); padding:8px 14px; border-radius:28px; display:flex; align-items:center; gap:8px; font-weight:600}
+.user-name{margin:18px 0 4px 0; display:inline-block; background:#ffffff; padding:8px 12px; border-radius:4px; color:#000; font-weight:600;}
+.container{padding:12px}
+.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:10px}
+.card{background:#fff; padding:14px; border-radius:10px; text-align:center; box-shadow:0 6px 14px rgba(10,15,30,0.06)}
+.card .icon{font-size:28px; color:var(--blue); display:block; margin-bottom:8px}
+.card div{font-size:14px}
+.quick{position:fixed; left:50%; transform:translateX(-50%); bottom:46px; background:var(--yellow); width:72px; height:72px; border-radius:36px; display:flex; align-items:center; justify-content:center; font-weight:700; box-shadow:0 8px 22px rgba(0,0,0,0.18); z-index:40}
+.bottom-nav{position:fixed; left:0; right:0; bottom:0; background:var(--blue); color:#fff; display:flex; justify-content:space-around; align-items:center; padding:8px 6px; z-index:30}
+.nav-item{font-size:13px; opacity:.95}
+@media(min-width:640px){ .grid{grid-template-columns:repeat(4,1fr)} .logo img{height:72px} }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="top">
+    <div class="logo">
+      <img src="logo.png" alt="FARI logo" />
+      <div class="brand-small">apps.BANGLADESH.limited</div>
+    </div>
+    <div class="balance-pill">৳ Balance</div>
+  </div>
+  <div class="user-name">MD RAKIBUL HASAN</div>
+</header>
+
+<main class="container">
+  <section class="grid">
+    <div class="card"><span class="icon">💸</span><div>Send Money</div></div>
+    <div class="card"><span class="icon">📱</span><div>Mobile Recharge</div></div>
+    <div class="card"><span class="icon">🏧</span><div>Cash Out</div></div>
+    <div class="card"><span class="icon">🛒</span><div>Payment</div></div>
+    <div class="card"><span class="icon">💳</span><div>Add Money</div></div>
+    <div class="card"><span class="icon">🏦</span><div>Savings</div></div>
+  </section>
+</main>
+
+<div class="quick">QR</div>
+
+<nav class="bottom-nav">
+  <div class="nav-item">Statement</div>
+  <div class="nav-item">Offers</div>
+  <div style="width:80px"></div>
+  <div class="nav-item">Location</div>
+  <div class="nav-item">FAQ</div>
+</nav>
+
+</body>
+  </html>
